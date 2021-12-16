@@ -1,0 +1,68 @@
+form {
+  position: relative;
+  font-size: 1.2em;
+  margin-top: 5%;
+}
+
+button {
+  background-color: darkgray;
+  color: white;
+  border: 2px solid white;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 3px 10px;
+  left: 0;
+}
+
+button:hover {
+  background-color: black;
+}
+
+output,
+.counter {
+  position: absolute;
+  top: 150%;
+  font-family: "Bungee";
+  top: 100px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.counter {
+  right: 0;
+  font-size: 1.1em;
+}
+
+#tweet-text {
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-style: none;
+  resize: none;
+  outline: none;
+  margin-bottom: -10px;
+  border-bottom: 3px solid rgb(255, 245, 245);
+}
+
+.invalid {
+  display: inline;
+  color: rgb(2, 1, 1);
+}
+
+#max,
+#empty {
+  display: none;
+  width: 70%;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 14%;
+  border: 2px outset red;
+}
+.red {
+  display: inline;
+  color: red;
+}
