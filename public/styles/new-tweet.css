@@ -66,3 +66,20 @@ output,
   display: inline;
   color: red;
 }
+#tweet-text {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid rgb(70, 68, 68);
+  background-color: transparent;
+  
+  }
+  #tweet-text:focus {
+  outline: none;
+  }
+  
+  .tweet-bottom {
+  display: flex;
+  justify-content: space-between;
+  }
