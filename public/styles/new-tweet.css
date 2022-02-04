@@ -1,85 +1,67 @@
-form {
-  position: relative;
-  font-size: 1.2em;
-  margin-top: 5%;
-}
-
 button {
-  background-color: darkgray;
-  color: white;   
-  border: 2px solid white;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  padding: 3px 10px;
-  left: 0;
+  background-color:#98ff07;
+  color: rgb(255, 6, 6);
+  font-family: "Bungee";
 }
 
 button:hover {
-  background-color: black;
+  background-color: #eaedf7;
 }
 
-output,
-.counter {
-  position: absolute;
-  top: 150%;
-  font-family: "Bungee";
-  top: 100px;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-.counter {
-  right: 0;
-  font-size: 1.1em;
-}
-
-#tweet-text {
-  background: transparent;
-  width: 100%;
-  border: none;
-  border-style: none;
-  resize: none;
+input {
+  border: 0 none;
   outline: none;
-  margin-bottom: -10px;
-  border-bottom: 3px solid rgb(255, 245, 245);
+  background-color: transparent;
+  width: 100%;
 }
 
-.invalid {
-  display: inline;
-  color: rgb(2, 1, 1);
+.input-box {
+  font-family: 'Sans Pro';
+  border: 0 none;
+  border-bottom: 5px solid rgb(70, 68, 68);
+  padding: 10px 10px;
+  outline: none;
+}
+#tweet-text {
+width: 100%;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 5px solid rgb(70, 68, 68);
+background-color: transparent;
+
+}
+#tweet-text:focus {
+outline: none;
 }
 
-#max,
-#empty {
-  display: none;
-  width: 70%;
-  text-align: center;
-  position: relative;
-  font-size: 20px;
-  padding: 5px;
-  margin-left: 14%;
-  border: 2px outset red;
+.tweet-bottom {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
 }
-.red {
-  display: inline;
+
+.counter, .input-box {
+  /* color: rgb(70, 68, 68); */
+  font-family: "Bungee";
+}
+
+.bottomline {
+  display: flex;
+  font-family: 'Bungee';
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.counter.error {
   color: red;
 }
-#tweet-text {
-  width: 100%;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 5px solid rgb(70, 68, 68);
-  background-color: transparent;
-  
-  }
-  #tweet-text:focus {
-  outline: none;
-  }
-  
-  .tweet-bottom {
-  display: flex;
-  justify-content: space-between;
-  }
+
+#errorMessage {
+  color: red;
+}
+
+.error {
+  color: red;
+}

@@ -1,16 +1,14 @@
+const countNumber = 140;
+function updateCounter() {
+  const counter = $("#tweet-text").val().length;
+  $('.counter').text(countNumber - counter);
+  if ($('.counter').text() < 0) {
+    $('.counter').addClass('error');
+  } else {
+    return $('.counter').removeClass('error');
+  }
+}
+
 $(document).ready(function () {
-  $("textarea").on("input", function () {
-    const characterCount = 140;
-    const inputLength = $(this).val().length;
-
-    $(this)
-      .nextAll(".counter")
-      .text(characterCount - inputLength);
-
-    if (characterCount - inputLength < 0) {
-      $(this).nextAll(".counter").css("color", "red");
-    } else {
-      $(this).nextAll(".counter").css("color", "black");
-    }
-  });
+  $("#tweet-text").on('input', updateCounter);
 });
