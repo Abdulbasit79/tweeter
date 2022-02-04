@@ -16,9 +16,6 @@ $(document).ready(function () {
     $('#errorMessage').hide();
   
     const renderTweets = function(tweets) {
-      // loops through tweets
-      // calls createTweetElement for each tweet
-      // takes return value and appends it to the tweets container
       $("#tweets-container").empty();
       for (let tweet of tweets) {
         $('#tweets-container').prepend(createTweetElement(tweet));
@@ -30,22 +27,6 @@ $(document).ready(function () {
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
     };
-    
-    // const validateTweet = function() {
-    //   const length = $('#tweet-text').val().length;
-    //   console.log("length: " + length);
-    //   let error = $('.invalid-text').slideUp()
-    //   if (length === 0) {
-    //     error.text('You have not written anything!').slideDown();
-    //     return false;
-    //   } else if (length > 140) {
-    //     error.text('Too long!').slideDown();
-    //     return false;
-    //   }
-    //   error.slideUp();
-    //   return true;
-      
-    // }
     
     
     
@@ -110,7 +91,6 @@ $(document).ready(function () {
   
   
   
-    // loadTweets();
   
   });
 
