@@ -27,13 +27,14 @@
   margin: 20px;
 }
 
-.handle{
-  display: none;
-  color:rgb(3, 9, 24);
-  opacity: 45%;
-  float: right;
-  font-size: 35px;
-  margin: 20px;
+.handle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  padding: 1.5em;
+  margin-right: 20px;
 }
 
 

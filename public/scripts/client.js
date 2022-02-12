@@ -5,9 +5,7 @@ $(document).ready(function() {
       url: '/tweets',
       
     }).then((response) => {
-      console.log("RESPONSE: ");
-      console.log(response);
-      renderTweets(response);
+    renderTweets(response);
       // $('#tweet-text').val("");
       $(".counter").text(140);
     });
@@ -33,7 +31,7 @@ $(document).ready(function() {
   
   
   const createTweetElement = function(tweet) {
-    let date = new Date(tweet.created_at).toLocaleDateString();
+    let date = timeago.format(tweet.created_at)
     
     return `
     <article class="tweet">
@@ -41,6 +39,8 @@ $(document).ready(function() {
     <div class="info">
     <img src=${tweet.user.avatars} class="avatar"/>
     <span class="name">${tweet.user.name}</span>
+    
+
     </div>
     <span class="handle">${tweet.user.handle}</span>
     </header>
